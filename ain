@@ -252,7 +252,7 @@ esac
 
 case $1 in
 "7")
-install-webui-limitation-xderm-mini-gui;exit
+install-webui-limitation;exit
 ;;
 esac
 
