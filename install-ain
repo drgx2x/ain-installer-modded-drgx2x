@@ -26,10 +26,10 @@ sleep 2
 an=$(find /usr/bin)
 if [[ $an ==  *"ain"* ]]; then
 rm -rf /usr/bin/ain
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/ain/main/ain" -P /usr/bin &> /dev/null
+wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/ain-installer-modded-drgx2x/main/ain" -P /usr/bin &> /dev/null
 chmod 777 /usr/bin/ain &> /dev/null
 else
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/ain/main/ain" -P /usr/bin &> /dev/null
+wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/ain-installer-modded-drgx2x/main/ain" -P /usr/bin &> /dev/null
 chmod 777 /usr/bin/ain &> /dev/null
 fi
 sleep 2
