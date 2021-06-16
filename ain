@@ -135,7 +135,7 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "memulai install webui-limitation xderm-mini-gui"
 sleep 2
 clear
-wget --no-check-certificate "https://raw.githubusercontent.com/ryanfauzi1/webui-limitation/main/installer" -P /root/ && chmod 777 /root/intaller.1 && bash installer.1
+wget --no-check-certificate "https://raw.githubusercontent.com/ryanfauzi1/webui-limitation/main/installer" -P /root/ && chmod 777 /root/intaller && bash installer
 sleep 2
 else
 clear
