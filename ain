@@ -148,10 +148,10 @@ fi
 echo -e "$Y"
 update-ain(){
 rm -rf /usr/bin/update-ain &> /dev/null
-echo -e " mengecek versi AIN"; wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/ain/main/update-ain" -P /usr/bin &> /dev/null
+echo -e " mengecek versi AIN"; wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/ain-installer-modded-drgx2x/main/update-ain" -P /usr/bin &> /dev/null
 sleep 1
 an=$(cat /usr/bin/update-ain)
-if [[ $an == *"1.2"* ]]; then
+if [[ $an == *"2"* ]]; then
 echo -e " AIN sudah$R versi terbaru"
 rm -rf /usr/bin/update-ain &> /dev/null
 echo -e "$Y"
@@ -166,14 +166,14 @@ rm -rf /usr/bin/update-ain &> /dev/null
 an=$(find /usr/bin)
 if [[ $an ==  *"ain"* ]]; then
 rm -rf /usr/bin/ain &> /dev/null
-echo -e "$G memperbaharui..."; wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/ain/main/ain" -P /usr/bin &> /dev/null
+echo -e "$G memperbaharui..."; wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/ain-installer-modded-drgx2x/main/ain" -P /usr/bin &> /dev/null
 sleep 1
 chmod 777 /usr/bin/ain &> /dev/null
 echo -e "$LB update selesai"
 sleep 2
 echo -e ""
 else
-echo -e "$G memperbaharui..."; wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/ain/main/ain" -P /usr/bin &> /dev/null
+echo -e "$G memperbaharui..."; wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/ain-installer-modded-drgx2x/main/ain" -P /usr/bin &> /dev/null
 sleep 1
 chmod 777 /usr/bin/ain &> /dev/null
 echo -e "$LB update selesai"
@@ -201,7 +201,7 @@ echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
 echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 7    $DB**"
 echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
 echo -e "$DB ******************************************************"
-echo -e "$DB **$Y         AIN V1.2$DB *$Y COPYRIGHT$R @$Y drgx2x          $DB**"
+echo -e "$DB **$Y         AIN V2$DB *$Y COPYRIGHT$R @$Y drgx2x          $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
 echo -e "$Y"
@@ -283,7 +283,7 @@ echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
 echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 7    $DB**"
 echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
 echo -e "$DB ******************************************************"
-echo -e "$DB **$Y         AIN V1.2$DB *$Y COPYRIGHT$R @$Y VITO H.S          $DB**"
+echo -e "$DB **$Y         AIN V2$DB *$Y COPYRIGHT$R @$Y drgx2x          $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
 echo -e "$Y"
