@@ -129,7 +129,7 @@ exit
 fi
 }
 echo -e "$Y"
-install webui-limitation-xderm-mini-gui(){
+install-webui-limitation-xderm-mini-gui(){
 read -p "akan uninstall terminal-luci untuk openwrt v19,apakah anda yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "memulai install webui-limitation xderm-mini-gui"
