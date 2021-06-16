@@ -129,23 +129,6 @@ exit
 fi
 }
 echo -e "$Y"
-install-terminal-luci(){
-read -p "akan menginstall terminal-luci untuk openwrt v19,apakah anda yakin? (y/n) : " an
-if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "memulai penginstallan terminal-luci"
-sleep 2
-clear
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/terminal-luci/main/install-terminal-luci" -P /root/ && chmod 777 /root/install-terminal-luci && bash install-terminal-luci
-sleep 2
-else
-clear
-echo -e "kembali ke halaman awal..."
-sleep 2
-clear
-exit
-fi
-}
-echo -e "$Y"
 uninstall-terminal-luci(){
 read -p "akan uninstall terminal-luci untuk openwrt v19,apakah anda yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
@@ -153,74 +136,6 @@ echo -e "memulai uninstall terminal-luci"
 sleep 2
 clear
 wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/terminal-luci/main/uninstall-terminal-luci" -P /root/ && chmod 777 /root/uninstall-terminal-luci && bash uninstall-terminal-luci
-sleep 2
-else
-clear
-echo -e "kembali ke halaman awal..."
-sleep 2
-clear
-exit
-fi
-}
-echo -e "$Y"
-install-argonv19(){
-read -p "akan menginstall argon untuk openwrt v19,apakah anda yakin? (y/n) : " an
-if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "memulai penginstallan argon teme openwrt v19"
-sleep 2
-clear
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/argon-themev19/main/install-argon-v19" -P /root/ && chmod 777 /root/install-argon-v19 && bash install-argon-v19
-sleep 2
-else
-clear
-echo -e "kembali ke halaman awal..."
-sleep 2
-clear
-exit
-fi
-}
-echo -e "$Y"
-uninstall-argonv19(){
-read -p "akan uninstall argon untuk openwrt v19,apakah anda yakin? (y/n) : " an
-if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "memulai uninstall argon teme openwrt v19"
-sleep 2
-clear
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/argon-themev19/main/uninstall-argon-v19" -P /root/ && chmod 777 /root/uninstall-argon-v19 && bash uninstall-argon-v19
-sleep 2
-else
-clear
-echo -e "kembali ke halaman awal..."
-sleep 2
-clear
-exit
-fi
-}
-echo -e "$Y"
-install-argonv18(){
-read -p "akan menginstall argon untuk openwrt v18,apakah anda yakin? (y/n) : " an
-if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "memulai penginstallan argon teme openwrt v18"
-sleep 2
-clear
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/argon-themev18/main/install-argon-v18" -P /root/ && chmod 777 /root/install-argon-v18 && bash install-argon-v18
-sleep 2
-else
-clear
-echo -e "kembali ke halaman awal..."
-sleep 2
-clear
-exit
-fi
-}
-echo -e "$Y"
-uninstall-argonv18(){
-read -p "akan uninstall argon untuk openwrt v18,apakah anda yakin? (y/n) : " an
-if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "memulai uninstall argon teme openwrt v18"
-sleep 2
-clear
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/argon-themev18/main/uninstall-argon-v18" -P /root/ && chmod 777 /root/uninstall-argon-v18 && bash uninstall-argon-v18
 sleep 2
 else
 clear
@@ -283,15 +198,10 @@ echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
 echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
 echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 5    $DB**"
 echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
-echo -e "$DB **$G INSTALL TERMINAL-LUCI V19          *    ain 7    $DB**"
-echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 8    $DB**"
-echo -e "$DB **$G INSTALL ARGON THEME V19            *    ain 9    $DB**"
-echo -e "$DB **$G UNINSTALL ARGON THEME V19          *    ain 10   $DB**"
-echo -e "$DB **$G INSTALL ARGON THEME V18            *    ain 11   $DB**"
-echo -e "$DB **$G UNINSTALL ARGON THEME V18          *    ain 12   $DB**"
-echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 13   $DB**"
+echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 7    $DB**"
+echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
 echo -e "$DB ******************************************************"
-echo -e "$DB **$Y         AIN V1.2$DB *$Y COPYRIGHT$R @$Y VITO H.S          $DB**"
+echo -e "$DB **$Y         AIN V1.2$DB *$Y COPYRIGHT$R @$Y drgx2x          $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
 echo -e "$Y"
@@ -342,42 +252,12 @@ esac
 
 case $1 in
 "7")
-install-terminal-luci;exit
-;;
-esac
-
-case $1 in
-"8")
 uninstall-terminal-luci;exit
 ;;
 esac
 
 case $1 in
-"9")
-install-argonv19;exit
-;;
-esac
-
-case $1 in
-"10")
-uninstall-argonv19;exit
-;;
-esac
-
-case $1 in
-"11")
-install-argonv18;exit
-;;
-esac
-
-case $1 in
-"12")
-uninstall-argonv18;exit
-;;
-esac
-
-case $1 in
-"13")
+"8")
 update-ain;perubahan;exit
 ;;
 esac
@@ -400,13 +280,8 @@ echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
 echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
 echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 5    $DB**"
 echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
-echo -e "$DB **$G INSTALL TERMINAL-LUCI V19          *    ain 7    $DB**"
-echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 8    $DB**"
-echo -e "$DB **$G INSTALL ARGON THEME V19            *    ain 9    $DB**"
-echo -e "$DB **$G UNINSTALL ARGON THEME V19          *    ain 10   $DB**"
-echo -e "$DB **$G INSTALL ARGON THEME V18            *    ain 11   $DB**"
-echo -e "$DB **$G UNINSTALL ARGON THEME V18          *    ain 12   $DB**"
-echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 13   $DB**"
+echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 7    $DB**"
+echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y         AIN V1.2$DB *$Y COPYRIGHT$R @$Y VITO H.S          $DB**"
 echo -e "$DB ******************************************************"
