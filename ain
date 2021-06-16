@@ -129,13 +129,13 @@ exit
 fi
 }
 echo -e "$Y"
-uninstall-terminal-luci(){
+install webui-limitation xderm-mini-gui(){
 read -p "akan uninstall terminal-luci untuk openwrt v19,apakah anda yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "memulai uninstall terminal-luci"
+echo -e "memulai install webui-limitation xderm-mini-gui"
 sleep 2
 clear
-wget --no-check-certificate "https://raw.githubusercontent.com/vitoharhari/terminal-luci/main/uninstall-terminal-luci" -P /root/ && chmod 777 /root/uninstall-terminal-luci && bash uninstall-terminal-luci
+wget -O installer https://raw.githubusercontent.com/ryanfauzi1/webui-limitation/main/installer && bash installer
 sleep 2
 else
 clear
@@ -198,7 +198,7 @@ echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
 echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
 echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 5    $DB**"
 echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
-echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 7    $DB**"
+echo -e "$DB **$G INSTALL WEBUI-LIMITATION GUI       *    ain 7    $DB**"
 echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y         AIN V2$DB *$Y COPYRIGHT$R @$Y drgx2x          $DB**"
@@ -252,7 +252,7 @@ esac
 
 case $1 in
 "7")
-uninstall-terminal-luci;exit
+install webui-limitation xderm-mini-gui;exit
 ;;
 esac
 
@@ -280,7 +280,7 @@ echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
 echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
 echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 5    $DB**"
 echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
-echo -e "$DB **$G UNINSTALL TERMINAL-LUCI V19        *    ain 7    $DB**"
+echo -e "$DB **$G INSTALL WEBUI-LIMITATION GUI        *    ain 7    $DB**"
 echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y         AIN V2$DB *$Y COPYRIGHT$R @$Y drgx2x          $DB**"
