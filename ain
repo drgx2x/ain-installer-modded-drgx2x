@@ -27,8 +27,8 @@ BP='\e[3;35m' #PURPLE
 BLB='\e[3;36m' #LIGHTBLUE
 
 echo -e "$Y"
-xderm-mini(){
-read -p "akan menginstall xderm-mini,apakah anda yakin? (y/n) : " an
+file-xderm-mini-gui(){
+read -p "akan menginstall file tambahan xderm-mini-gui,apakah anda yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "memulai penginstallan xderm-mini"
 sleep 2
@@ -192,7 +192,7 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$Y       PILIH TOOLS YANG AKAN DI INSTALL!!!        $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
-echo -e "$DB **$G INSTALL XDERM-MINI                 *    ain 1    $DB**"
+echo -e "$DB **$G FILE TAMBAHAN XDERM-MINI-GUI       *    ain 1    $DB**"
 echo -e "$DB **$G INSTALL XDERM-MINI-GUI             *    ain 2    $DB**"
 echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
 echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
@@ -216,7 +216,7 @@ rm -rf /root/changelog-ain
 
 case $1 in
 "1")
-xderm-mini;exit
+file-xderm-mini-gui;exit
 ;;
 esac
 
@@ -274,7 +274,7 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$Y       PILIH TOOLS YANG AKAN DI INSTALL!!!        $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
-echo -e "$DB **$G INSTALL XDERM-MINI                 *    ain 1    $DB**"
+echo -e "$DB **$G FILE TAMBAHAN XDERM-MINI-GUI       *    ain 1    $DB**"
 echo -e "$DB **$G INSTALL XDERM-MINI-GUI             *    ain 2    $DB**"
 echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
 echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
