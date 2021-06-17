@@ -27,30 +27,13 @@ BP='\e[3;35m' #PURPLE
 BLB='\e[3;36m' #LIGHTBLUE
 
 echo -e "$Y"
-xderm-mini(){
-read -p "akan menginstall xderm-mini,apakah anda yakin? (y/n) : " an
-if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "memulai penginstallan xderm-mini"
-sleep 2
-clear
-wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/xderm-mini/main/install-xderm-mini" -P /usr/bin/ && chmod 777 /usr/bin/install-xderm-mini && bash install-xderm-mini
-sleep 2
-else
-clear
-echo -e "kembali ke halaman awal..."
-sleep 2
-clear
-exit
-fi
-}
-echo -e ""
 xderm-mini-gui(){
 read -p "akan menginstall xderm-mini-gui,pastikan xderm-mini sudah terinstall. apakah anda yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "memulai penginstallan xderm-mini-gui"
 sleep 2
 clear
-wget --no-check-certificate "https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/installer" -O /root/installer && chmod +x installer && bash installer
+wget --no-check-certificate "https://raw.githubusercontent.com/drgx2x/xderm-mini/main/install-xderm-mini" -P /usr/bin/ && chmod 777 /usr/bin/install-xderm-mini && bash install-xderm-mini
 sleep 2
 else
 clear
@@ -192,14 +175,13 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$Y       PILIH TOOLS YANG AKAN DI INSTALL!!!        $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
-echo -e "$DB **$G INSTALL XDERM-MINI                 *    ain 1    $DB**"
-echo -e "$DB **$G INSTALL XDERM-MINI-GUI             *    ain 2    $DB**"
-echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
-echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
-echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 5    $DB**"
-echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
-echo -e "$DB **$G INSTALL WEBUI-LIMITATION GUI       *    ain 7    $DB**"
-echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
+echo -e "$DB **$G INSTALL XDERM-MINI-GUI             *    ain 1    $DB**"
+echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 2    $DB**"
+echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 3    $DB**"
+echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 4    $DB**"
+echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 5    $DB**"
+echo -e "$DB **$G INSTALL WEBUI-LIMITATION GUI       *    ain 6    $DB**"
+echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 7    $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y       AIN V3$DB *$Y COPYRIGHT$R @$Y drgx2x       $DB**"
 echo -e "$DB ******************************************************"
@@ -216,48 +198,42 @@ rm -rf /root/changelog-ain
 
 case $1 in
 "1")
-xderm-mini;exit
-;;
-esac
-
-case $1 in
-"2")
 xderm-mini-gui;exit
 ;;
 esac
 
 case $1 in
-"3")
+"2")
 fix-xderm-mini-gui;exit
 ;;
 esac
 
 case $1 in
-"4")
+"3")
 install-login-page;exit
 ;;
 esac
 
 case $1 in
-"5")
+"4")
 remove-login-page;exit
 ;;
 esac
 
 case $1 in
-"6")
+"5")
 speedtest;exit
 ;;
 esac
 
 case $1 in
-"7")
+"6")
 install-webui-limitation;exit
 ;;
 esac
 
 case $1 in
-"8")
+"7")
 update-ain;perubahan;exit
 ;;
 esac
@@ -274,14 +250,13 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$Y       PILIH TOOLS YANG AKAN DI INSTALL!!!        $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
-echo -e "$DB **$G INSTALL XDERM-MINI                 *    ain 1    $DB**"
-echo -e "$DB **$G INSTALL XDERM-MINI-GUI             *    ain 2    $DB**"
-echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 3    $DB**"
-echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 4    $DB**"
-echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 5    $DB**"
-echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 6    $DB**"
-echo -e "$DB **$G INSTALL WEBUI-LIMITATION GUI       *    ain 7    $DB**"
-echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 8    $DB**"
+echo -e "$DB **$G INSTALL XDERM-MINI-GUI             *    ain 1    $DB**"
+echo -e "$DB **$G FIX DOWNLOAD PHP XDERM-MINI-GUI    *    ain 2    $DB**"
+echo -e "$DB **$G INSTALL LOGIN XDERM-MINI-GUI       *    ain 3    $DB**"
+echo -e "$DB **$G REMOVE LOGIN XDERM-MINI-GUI        *    ain 4    $DB**"
+echo -e "$DB **$G INSTALL SPEEDTEST BY OOKLA         *    ain 5    $DB**"
+echo -e "$DB **$G INSTALL WEBUI-LIMITATION GUI       *    ain 6    $DB**"
+echo -e "$DB **$G UPDATE AIN KE VERSI TERBARU        *    ain 7    $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y       AIN V3$DB *$Y COPYRIGHT$R @$Y drgx2x        $DB**"
 echo -e "$DB ******************************************************"
