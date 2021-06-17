@@ -28,7 +28,7 @@ BLB='\e[3;36m' #LIGHTBLUE
 echo -e "$Y"
 echo -e " **********************************************"
 echo -e "$Y *                                           $Y *"
-echo -e "$Y *$G              changelog V3              $Y *"
+echo -e "$Y *$G              changelog V3             $Y *"
 echo -e "$Y *                                           $Y *"
 echo -e " **********************************************"
 echo -e "$Y *                                           $Y *"
